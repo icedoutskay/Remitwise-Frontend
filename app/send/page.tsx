@@ -6,26 +6,32 @@ import EmergencyTransferModal from './components/EmergencyTransferModal'
 import Link from 'next/link'
 import { ArrowLeft, Send, AlertCircle } from 'lucide-react'
 import SendHeader from './components/SendHeader'
+import RecipientAddressInput from './components/RecipientAddressInput'
 
 export default function SendMoney() {
   const [showEmergencyModal, setShowEmergencyModal] = useState(false)
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black overflow-x-">
       {/* Header */}
       <SendHeader />
     
-      <main className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="bg-white rounded-xl shadow-md p-8">
+      <main className="mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <RecipientAddressInput />
+      </main>
+    </div>
+  )
+}
+        {/* <div className="bg-white rounded-xl shadow-md p-8">
           <div className="mb-6">
             <h2 className="text-xl font-bold text-gray-900 mb-2">Send Money to Family</h2>
             <p className="text-gray-600">
               Send remittance via Stellar network. Funds will be automatically split according to your configuration.
             </p>
-          </div>
+          </div> */}
 
           {/* Form Placeholder */}
-          <form className="space-y-6">
+          {/* <form className="space-y-6">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Recipient Address
@@ -107,9 +113,9 @@ export default function SendMoney() {
               </button>
             </div>
           </form>
-9
+9 */}
           {/* Emergency Mode */}
-          <div className="mt-8 pt-8 border-t border-gray-200">
+          {/* <div className="mt-8 pt-8 border-t border-gray-200">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Emergency Transfer</h3>
             <p className="text-gray-600 mb-4">
               Need to send money urgently? Use emergency mode for priority processing.
@@ -121,24 +127,20 @@ export default function SendMoney() {
               Emergency Transfer
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Integration Note */}
-        <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+        {/* <div className="mt-6 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
           <p className="text-sm text-yellow-800">
             <strong>Integration Required:</strong> Connect to Stellar SDK, implement wallet connection (Freighter or similar), 
             integrate with anchor platform for fiat on/off-ramps, and connect to smart contracts for automatic split execution.
           </p>
-        </div>
+        </div> */}
 
 
         {/* emergency transfer modal */}
-        <EmergencyTransferModal
+        {/* <EmergencyTransferModal
   open={showEmergencyModal}
   onClose={() => setShowEmergencyModal(false)}
-/>
-      </main>
-    </div>
-  )
-}
+/> */}
 
