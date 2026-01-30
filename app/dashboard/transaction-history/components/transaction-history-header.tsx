@@ -23,7 +23,7 @@ const TransactionHistoryHeader: React.FC<ITransactionHistoryHeaderProps> = ({
         >
           <ArrowLeft size={17} className="text-white" />
         </button>
-        <div className="min-w-0 w-[140px] sm:w-[350px] md:w-full">
+        <div className="min-w-0 md:w-full">
           <h5 className="font-bold text-xl sm:text-2xl leading-7 sm:leading-8 tracking-[0.07px] text-white">
             Transaction History
           </h5>
@@ -41,7 +41,7 @@ const TransactionHistoryHeader: React.FC<ITransactionHistoryHeaderProps> = ({
           alt="Remitwise logo"
           priority
         />
-        <p className="font-bold text-lg sm:text-xl leading-6 sm:leading-7 tracking-[-0.45px] text-white whitespace-nowrap">
+        <p className="hidden md:block font-bold text-lg sm:text-xl leading-6 sm:leading-7 tracking-[-0.45px] text-white whitespace-nowrap">
           RemitWise
         </p>
       </div>

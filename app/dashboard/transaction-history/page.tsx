@@ -17,7 +17,7 @@ const TransactionHistoryPage = () => {
     <main className="w-full min-h-screen bg-[#010101] font-inter">
       <TransactionHistoryHeader transactions={10} />
       <div className="mx-4 md:mx-20 mt-10">
-        <div className="flex flex-col sm:flex-row justify-center gap-4 items-center border border-[#FFFFFF14] bg-gradient-to-b from-[#0F0F0F] to-[#0A0A0A] rounded-2xl py-6 px-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-0 sm:gap-4 items-center border border-[#FFFFFF14] bg-gradient-to-b from-[#0F0F0F] to-[#0A0A0A] rounded-2xl py-6 px-4">
           <TransactionHistorySearchInput />
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4 sm:mt-0 w-full sm:w-auto">
             <Button
