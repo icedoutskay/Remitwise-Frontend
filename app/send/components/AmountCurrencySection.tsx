@@ -19,6 +19,7 @@ export default function AmountCurrencySection({ onPreview, onSend }: AmountCurre
   const [currency, setCurrency] = useState<string>("USDC")
   const [error, setError] = useState<string>("")
 
+  // Currency conversion rates (can be replaced with API data)
   const conversionRates: Record<string, number> = {
     USDC: 1.0,
     XLM: 0.28,
