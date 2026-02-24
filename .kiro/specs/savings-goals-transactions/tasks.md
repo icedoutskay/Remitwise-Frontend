@@ -87,7 +87,7 @@
   - Add error handling with appropriate status codes
   - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5_
 
-- [ ] 9. Implement POST /api/goals/[id]/lock endpoint
+- [x] 9. Implement POST /api/goals/[id]/lock endpoint
   - Create `app/api/goals/[id]/lock/route.ts` file
   - Implement POST handler
   - Add session authentication
@@ -95,7 +95,7 @@
   - Add error handling with appropriate status codes
   - _Requirements: 4.1, 4.2, 4.3, 4.4_
 
-- [ ] 10. Implement POST /api/goals/[id]/unlock endpoint
+- [x] 10. Implement POST /api/goals/[id]/unlock endpoint
   - Create `app/api/goals/[id]/unlock/route.ts` file
   - Implement POST handler
   - Add session authentication
