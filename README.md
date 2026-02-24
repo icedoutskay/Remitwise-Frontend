@@ -119,6 +119,39 @@ This Next.js application uses API routes to handle backend functionality. API ro
 
 All API routes are serverless functions deployed alongside the frontend.
 
+### Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```bash
+# Stellar Network Configuration
+NEXT_PUBLIC_STELLAR_NETWORK=testnet  # or 'mainnet'
+NEXT_PUBLIC_HORIZON_URL=https://horizon-testnet.stellar.org
+NEXT_PUBLIC_SOROBAN_RPC_URL=https://soroban-testnet.stellar.org
+
+# Contract IDs (deployed Soroban contracts)
+NEXT_PUBLIC_REMITTANCE_SPLIT_CONTRACT_ID=
+NEXT_PUBLIC_SAVINGS_GOALS_CONTRACT_ID=
+NEXT_PUBLIC_BILL_PAYMENTS_CONTRACT_ID=
+NEXT_PUBLIC_INSURANCE_CONTRACT_ID=
+NEXT_PUBLIC_FAMILY_WALLET_CONTRACT_ID=
+
+# Authentication
+AUTH_SECRET=your-secret-key-here  # Generate with: openssl rand -base64 32
+SESSION_COOKIE_NAME=remitwise-session
+SESSION_MAX_AGE=86400  # 24 hours in seconds
+
+# API Configuration
+API_RATE_LIMIT=100  # requests per minute
+API_TIMEOUT=30000  # milliseconds
+
+# Optional: Anchor Platform
+ANCHOR_PLATFORM_URL=
+ANCHOR_PLATFORM_API_KEY=
+```
+
+See `.env.example` for a complete list of configuration options.
+
 ## Design Notes
 
 - All forms are currently disabled (placeholders)
